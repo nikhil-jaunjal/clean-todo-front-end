@@ -14,14 +14,14 @@
           <label>Email *</label> <br>
           <input type="text" name="email" formControlName="email">
         </div>
-        <div class="form-group go-btn-adjust">
+        <div class="form-group pt-25 text-center">
           <button class="primary-btn" type="submit">Go</button>
         </div>
       </form>
-      <div class="error-box" *ngIf="invalidForm">
+      <div class="bg-red-200 text-center text-md text-red-700 rounded" *ngIf="invalidForm">
         Please fill all fields with correct data
       </div>
-      <div class="error-box" *ngIf="apiError">
+      <div class="bg-red-200 text-center text-md text-red-700 rounded" *ngIf="apiError">
         Somthing went wrong, please try again
       </div>
     </div>
